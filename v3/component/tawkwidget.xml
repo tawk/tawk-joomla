@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/**
+ * @package Tawk.to Widget for Joomla! 3.2
+ * @author Tawk.to
+ * @copyright (C) 2014- Tawk.to
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+**/
+ -->
+
+<extension version="3.1" type="component" method="upgrade">
+	<name>COM_TAWKWIDGET</name>
+	<menu>Tawk.to</menu>
+	<author>Tawk.to</author>
+	<creationDate>Feb 2014</creationDate>
+	<copyright>Tawk.to</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>support@tawk.to</authorEmail>
+	<authorUrl>https://tawk.to</authorUrl>
+	<version>1.0.0</version>
+	<description>Tawk.to widget customization component</description>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+		<menu>COM_TAWKWIDGET_MENU</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>tawkwidget.php</filename>
+			<filename>controller.php</filename>
+			<folder>views</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>sql</folder>
+			<folder>language</folder>
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_tawkwidget.ini</language>
+		</languages>
+	</administration>
+</extension>

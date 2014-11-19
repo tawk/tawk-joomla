@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/**
+ * @package Tawk.to Widget for Joomla! 3.2
+ * @author Tawk.to
+ * @copyright (C) 2014- Tawk.to
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+**/
+-->
+
+<extension version="3.1" type="plugin" group="system">
+	<name>Tawk.to</name>
+	<author>Tawk.to team</author>
+	<creationDate>Feb 2014</creationDate>
+	<copyright>Copyright (C) 2014 Tawk.to. All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>support@tawk.to</authorEmail>
+	<authorUrl>https://tawk.to</authorUrl>
+	<version>1.0.0</version>
+	<description>Tawk.to widget plugin for site</description>
+
+	<scriptfile>script.php</scriptfile>
+
+	<files>
+		<filename plugin="tawkwidget">tawkwidget.php</filename>
+		<filename>index.html</filename>
+		<folder>models</folder>
+		<folder>tables</folder>
+	</files>
+</extension>
