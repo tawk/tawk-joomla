@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>tawk.to</name>
+	<author>tawk.to</author>
+	<creationDate>2017-04-29</creationDate>
+	<copyright>All rights reserved by tawk.to 2017.</copyright>
+	<license>GPL 2.0</license>
+	<authorEmail>accounts@tawk.to</authorEmail>
+	<authorUrl>tawk.to</authorUrl>
+	<version>3.0.1</version>
+	<description><![CDATA[tawk.to is a <strong>free</strong> messaging app that lets you <strong>monitor</strong> and <strong>chat</strong> with <strong>visitors</strong>]]></description>
+	<files>
+		<filename module="mod_tawkto">mod_tawkto.php</filename>
+		<filename>index.html</filename>
+		<filename>readme.txt</filename>
+		<filename>mod_tawkto.xml</filename>
+		<folder>includes</folder>
+	</files>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_tawkto/includes/admin">
+			<fieldset name="basic">
+				<field name="tawkto_header" type="spacerinfo" default="" label=" " description="" />
+				<field name="tawkto_siteid" type="text" default="" label="tawk.to Site I.D." description=""/>
+				<field name="tawkto_widget" type="text" default="" label="Widget" description=""/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
