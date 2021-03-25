@@ -7,7 +7,7 @@
 	<authorUrl>http://tawk.to</authorUrl>
 	<copyright>Copyright (C) 2014 Tawk.to. All rights reserved.</copyright>
 	<license>GPL 2.0</license>
-	<version>3.0.1</version>
+	<version>3.0.2</version>
 	<description><![CDATA[tawk.to is a <strong>free</strong> messaging app that lets you <strong>monitor</strong> and <strong>chat</strong> with <strong>visitors</strong>]]></description>
 	<files>
 		<filename plugin="tawkto">tawkto.php</filename>

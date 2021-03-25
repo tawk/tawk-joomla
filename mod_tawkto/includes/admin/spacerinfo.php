@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------------
 # mod_tawkto - tawk.to
 # ------------------------------------------------------------------------
-# version 3.0.1
+# version 3.0.2
 # author tawk.to
 # @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 # Websites: http://tawk.to
@@ -14,7 +14,7 @@ defined('_JEXEC') or die('Direct access to this location is not allowed.');
 
 jimport('joomla.form.formfield');
 
-class JFormFieldSpacerinfo extends JFormField 
+class JFormFieldSpacerinfo extends JFormField
 {
 	protected $type = 'Spacerinfo';
 
@@ -62,10 +62,10 @@ class JFormFieldSpacerinfo extends JFormField
     		text-decoration: none;
 		}
 		</style>';
-		
+
 		$output .= '
 		<div class="tawk_header">
-			
+
 			<div class="tawk_logo">
 			<img src="../modules/mod_tawkto/includes/images/logo.png"/>
 			</div>
@@ -74,9 +74,9 @@ class JFormFieldSpacerinfo extends JFormField
 				tawk.to Module Settings
 			</div>
 			<div class="tawk_links">
-				Having trouble and need some help? Check out our <a class="tawkto_link" target="_blank" href="https://www.tawk.to/knowledgebase/">Knowledge Base</a>.	
+				Having trouble and need some help? Check out our <a class="tawkto_link" target="_blank" href="https://www.tawk.to/knowledgebase/">Knowledge Base</a>.
 			</div>
-			
+
 		</div>
 
 		<iframe
@@ -105,6 +105,10 @@ class JFormFieldSpacerinfo extends JFormField
 					if(e.data.action === "removeWidget") {
 						removeWidget(e);
 					}
+
+					if(e.data.action === "reloadHeight") {
+						reloadIframeHeight(e.data.height);
+					}
 				}
 			});
 
@@ -119,9 +123,22 @@ class JFormFieldSpacerinfo extends JFormField
 				jQuery("#jform_params_tawkto_widget").val("");
 				e.source.postMessage({action: "removeDone"}, "'.$this->getBaseUrl().'");
 			}
+
+			function reloadIframeHeight(height) {
+				if (!height) {
+					return;
+				}
+
+				var iframe = jQuery("#tawkIframe");
+				if (height === iframe.height()) {
+					return;
+				}
+
+				iframe.height(height);
+			}
 		</script>
 		';
-		
+
 		return $output;
 	}
 

@@ -1,8 +1,8 @@
 <?php
 /*------------------------------------------------------------------------
-# plg_tawkto - tawk.to 
+# plg_tawkto - tawk.to
 # ------------------------------------------------------------------------
-# version 3.0.1
+# version 3.0.2
 # author tawk.to
 # @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 # Websites: http://tawk.to
@@ -15,13 +15,13 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport( 'joomla.plugin.plugin' );
 
 class plgSystemtawkto extends JPlugin
-{	
+{
 	function plgSystemtawkto( &$subject, $params )
 	{
 		parent::__construct($subject, $params);
 
 	}
-	
+
 	function onBeforeCompileHead()
 	{
 		$document = JFactory::getDocument();
@@ -42,7 +42,7 @@ class plgSystemtawkto extends JPlugin
 					s1.setAttribute("crossorigin","*");
 					s0.parentNode.insertBefore(s1,s0);
 					})();
-				';			
+				';
 				$document->addScriptDeclaration($script);
 			}
 		}
