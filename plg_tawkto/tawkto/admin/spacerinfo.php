@@ -90,7 +90,7 @@ class JFormFieldSpacerinfo extends JFormField
 				var currentHost = window.location.protocol + "//" + window.location.host;
 				var currentsideId = jQuery("#jform_params_tawkto_siteid").val();
 				var currentwidgetId = jQuery("#jform_params_tawkto_widget").val();
-				var url = "'.$this->getBaseUrl().'/generic/widgets/?currentPageId="+currentsideId+"&currentWidgetId="+currentwidgetId+"&parentDomain=" + currentHost;
+				var url = "'.$this->getBaseUrl().'/generic/widgets/?currentPageId="+currentsideId+"&currentWidgetId="+currentwidgetId+"&platform=joomla&parentDomain=" + currentHost;
 
 				jQuery("#tawkIframe").attr("src", url);
 			});
