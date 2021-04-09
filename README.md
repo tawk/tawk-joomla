@@ -13,7 +13,7 @@ Never lose another lead or sale again — tawk.to offers iOS, Android, Windows a
 Don’t have a tawk.to account yet? [Create one here.](https://www.tawk.to/?utm_source=joomla&utm_medium=link&utm_campaign=signup)
 
 ## Installation & Configuration
-For visual presentations, please refer to [Joomla Knowledge Base Article](https://help.tawk.to/article/joomla).
+For a detailed installation guide, please refer to [Joomla Knowledge Base Article](https://help.tawk.to/article/joomla).
 
 ### Plugin
 1. Download the `plg_tawkto-<release_version>.zip` from the [latest release](https://github.com/tawk/tawk-joomla/releases).

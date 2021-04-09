@@ -3,7 +3,7 @@
 This contains the tawk.to module for Joomla. It is a module that will load the tawk.to widget on pages you have assigned the module to display.
 
 ## Installation
-For visual presentations, please refer to [Joomla Knowledge Base Article](https://help.tawk.to/article/joomla).
+For a detailed installation guide, please refer to [Joomla Knowledge Base Article](https://help.tawk.to/article/joomla).
 
 1. Download the `mod_tawkto-<release_version>.zip` from the [latest release](https://github.com/tawk/tawk-joomla/releases).
 2. In the Joomla administration panel, go to `Install Extensions`.
