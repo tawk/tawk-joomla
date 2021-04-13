@@ -12,6 +12,10 @@ Never lose another lead or sale again — tawk.to offers iOS, Android, Windows a
 
 Don’t have a tawk.to account yet? [Create one here.](https://www.tawk.to/?utm_source=joomla&utm_medium=link&utm_campaign=signup)
 
+## Extension Types
+- `Plugin` - this is a system plugin that will load the tawk.to widget in every webpage.
+- `Module` - this is a module that will load the tawk.to widget on pages you have assigned the module to display.
+
 ## Installation & Configuration
 For a detailed installation guide, please refer to [Joomla Knowledge Base Article](https://help.tawk.to/article/joomla).
 
