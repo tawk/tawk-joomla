@@ -1,2 +1,4 @@
 tmp-build
 pkg_tawk_UNZIPFIRST.zip
+*.zip
+./build/tawkto
