@@ -16,8 +16,8 @@ Don’t have a tawk.to account yet? [Create one here.](https://www.tawk.to/?utm_
 - `Plugin` - this is a system plugin that will load the tawk.to widget in every webpage.
 - `Module` - this is a module that will load the tawk.to widget on pages you have assigned the module to display.
 
-## Installation & Configuration
-For a detailed installation guide, please refer to [Joomla Knowledge Base Article](https://help.tawk.to/article/joomla).
+## Installation and Configuration
+For a detailed installation guide, please refer to [Joomla Help Center Article](https://help.tawk.to/article/joomla).
 
 ### Plugin
 1. Download the `plg_tawkto-<release_version>.zip` from the [latest release](https://github.com/tawk/tawk-joomla/releases).

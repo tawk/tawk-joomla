@@ -2,8 +2,8 @@
 
 This contains the tawk.to plugin for Joomla. It is a system plugin that will load the tawk.to widget in every webpage.
 
-## Installation & Configuration
-For a detailed installation guide, please refer to [Joomla Knowledge Base Article](https://help.tawk.to/article/joomla).
+## Installation and Configuration
+For a detailed installation guide, please refer to [Joomla Help Center Article](https://help.tawk.to/article/joomla).
 
 1. Download the `plg_tawkto-<release_version>.zip` from the [latest release](https://github.com/tawk/tawk-joomla/releases).
 2. In the Joomla administration panel, go to `Install Extensions`.
