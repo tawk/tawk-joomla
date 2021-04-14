@@ -16,7 +16,7 @@ jimport( 'joomla.plugin.plugin' );
 
 class plgSystemtawkto extends JPlugin
 {
-	function plgSystemtawkto( &$subject, $params )
+	function __construct( &$subject, $params )
 	{
 		parent::__construct($subject, $params);
 
