@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------------
 # plg_tawkto - tawk.to
 # ------------------------------------------------------------------------
-# version 3.0.2
+# version 3.0.3
 # author tawk.to
 # @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 # Websites: http://tawk.to

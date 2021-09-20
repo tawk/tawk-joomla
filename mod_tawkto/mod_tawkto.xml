@@ -7,7 +7,7 @@
 	<license>GPL 2.0</license>
 	<authorEmail>accounts@tawk.to</authorEmail>
 	<authorUrl>tawk.to</authorUrl>
-	<version>3.0.2</version>
+	<version>3.0.3</version>
 	<description><![CDATA[tawk.to is a <strong>free</strong> messaging app that lets you <strong>monitor</strong> and <strong>chat</strong> with <strong>visitors</strong>]]></description>
 	<files>
 		<filename module="mod_tawkto">mod_tawkto.php</filename>
