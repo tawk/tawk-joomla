@@ -14,14 +14,16 @@ services:
   web:
     depends_on:
       - db
-    image: joomla:${JOOMLA_IMAGE_VERSION}
+    build:
+      context: .
+      args:
+        JOOMLA_IMAGE_VERSION: ${JOOMLA_IMAGE_VERSION}
+        JOOMLA_DB_HOST_ARG: db
+        JOOMLA_DB_USER_ARG: joomla
+        JOOMLA_DB_PASSWORD_ARG: joomla
+        JOOMLA_DB_NAME_ARG: joomla
     ports:
       - 8000:80
-    environment:
-      JOOMLA_DB_HOST: db
-      JOOMLA_DB_USER: joomla
-      JOOMLA_DB_PASSWORD: joomla
-      JOOMLA_DB_NAME: joomla
     volumes:
       - web_data:/var/www/html
 volumes:
