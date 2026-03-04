@@ -12,11 +12,12 @@
 // No direct access.
 defined('_JEXEC') or die('Direct access to this location is not allowed.');
 
-jimport('joomla.form.formfield');
+use Joomla\CMS\Form\FormField;
+use Joomla\CMS\HTML\HTMLHelper;
 
-JHtml::_('jquery.framework');
+HTMLHelper::_('jquery.framework');
 
-class JFormFieldSpacerinfo extends JFormField
+class JFormFieldSpacerinfo extends FormField
 {
 	protected $type = 'Spacerinfo';
 

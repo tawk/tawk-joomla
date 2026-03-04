@@ -12,10 +12,12 @@
 // No direct access.
 defined('_JEXEC') or die('Direct Access to this location is not allowed.');
 
+use Joomla\CMS\Factory;
+
 if (!defined('DS')) define('DS', DIRECTORY_SEPARATOR);
 
 // Main code.
-$document = JFactory::getDocument();
+$document = Factory::getDocument();
 
 if (strcmp($params->get('tawkto_siteid'),'')!=0)
 {
