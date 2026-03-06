@@ -12,10 +12,9 @@
 // No direct access.
 defined('_JEXEC') or die('Direct access to this location is not allowed.');
 
+use Joomla\CMS\Factory;
 use Joomla\CMS\Form\FormField;
 use Joomla\CMS\HTML\HTMLHelper;
-
-HTMLHelper::_('jquery.framework');
 
 class JFormFieldSpacerinfo extends FormField
 {
@@ -23,6 +22,12 @@ class JFormFieldSpacerinfo extends FormField
 
 	public function getInput()
 	{
+		if (version_compare(JVERSION, '4.0', '>=')) {
+			Factory::getApplication()->getDocument()->getWebAssetManager()->useScript('jquery');
+		} else {
+			HTMLHelper::_('jquery.framework');
+		}
+
 		$output = "";
 		$output .= '<style type="text/css">
 		#jform_params_tawkto_siteid-lbl,
