@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------------
 # plg_tawkto - tawk.to
 # ------------------------------------------------------------------------
-# version 3.0.3
+# version 3.1.0
 # author tawk.to
 # @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 # Websites: http://tawk.to
@@ -12,9 +12,11 @@
 // Check to ensure this file is included in Joomla!
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
-jimport( 'joomla.plugin.plugin' );
+use Joomla\CMS\Plugin\CMSPlugin;
+use Joomla\CMS\Factory;
+use Joomla\CMS\Uri\Uri;
 
-class plgSystemtawkto extends JPlugin
+class plgSystemtawkto extends CMSPlugin
 {
 	function __construct( &$subject, $params )
 	{
@@ -24,9 +26,9 @@ class plgSystemtawkto extends JPlugin
 
 	function onBeforeCompileHead()
 	{
-		$document = JFactory::getDocument();
+		$document = Factory::getDocument();
 
-		if (strcmp(substr(JURI::base(), -15), "/administrator/")!=0)	// Apply tawk.to script only to front-end.
+		if (strcmp(substr(Uri::base(), -15), "/administrator/")!=0)	// Apply tawk.to script only to front-end.
 		{
 			if (strcmp($this->params->get('tawkto_siteid'),'')!=0)
 			{

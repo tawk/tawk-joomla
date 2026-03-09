@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------------
 # mod_tawkto - tawk.to
 # ------------------------------------------------------------------------
-# version 3.0.3
+# version 3.1.0
 # author tawk.to
 # @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 # Websites: http://tawk.to
@@ -12,16 +12,22 @@
 // No direct access.
 defined('_JEXEC') or die('Direct access to this location is not allowed.');
 
-jimport('joomla.form.formfield');
+use Joomla\CMS\Factory;
+use Joomla\CMS\Form\FormField;
+use Joomla\CMS\HTML\HTMLHelper;
 
-JHtml::_('jquery.framework');
-
-class JFormFieldSpacerinfo extends JFormField
+class JFormFieldSpacerinfo extends FormField
 {
 	protected $type = 'Spacerinfo';
 
 	public function getInput()
 	{
+		if (version_compare(JVERSION, '4.0', '>=')) {
+			Factory::getApplication()->getDocument()->getWebAssetManager()->useScript('jquery');
+		} else {
+			HTMLHelper::_('jquery.framework');
+		}
+
 		$output = "";
 		$output .= '<style type="text/css">
 		#jform_params_tawkto_siteid-lbl,

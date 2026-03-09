@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------------
 # mod_tawkto - tawk.to
 # ------------------------------------------------------------------------
-# version 3.0.3
+# version 3.1.0
 # author tawk.to
 # @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 # Websites: http://tawk.to
@@ -12,10 +12,12 @@
 // No direct access.
 defined('_JEXEC') or die('Direct Access to this location is not allowed.');
 
+use Joomla\CMS\Factory;
+
 if (!defined('DS')) define('DS', DIRECTORY_SEPARATOR);
 
 // Main code.
-$document = JFactory::getDocument();
+$document = Factory::getDocument();
 
 if (strcmp($params->get('tawkto_siteid'),'')!=0)
 {
